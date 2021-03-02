@@ -1,0 +1,45 @@
+// FUNCTION IMPLEMENTATION
+const assertEqual = function(actual, expected) {
+  const errorMessage = `❌ ❌ ❌ Assertion Failed: ${actual} !== ${expected}`;
+  const successMessage = `✅ ✅ ✅ Assertion Passed: ${actual} === ${expected}`
+
+  // console.assert(`${actual}` === `${expected}`, {successMessage});
+  // console.assert(`${actual}` !== `${expected}`, {errorMessage});
+  if (actual === expected) {console.log(successMessage)
+  }else{console.log(errorMessage)
+  }
+
+
+};
+
+/*
+below code 
+Implement a function eqArrays which takes in two arrays and returns 
+true or false, based on a perfect match.
+*/
+
+const eqArrays = (arr1, arr2) => {
+  let answer = '';
+  for (let i = 0; i < arr1.length; i++) {
+    if (arr1[i] === arr2[i]) {
+      answer = true;
+    } else{
+      answer = false;
+    }
+  }
+  console.log(answer);
+  return(answer);
+
+};
+
+eqArrays([1, 2, 3], [1, 2, 3]);
+assertEqual(eqArrays([1, 2, 3], [1, 2, 3]), true);
+
+eqArrays([1, 2, 3], [3, 2, 1]) 
+assertEqual(eqArrays([1, 2, 3], [3, 2, 1]), false);
+
+eqArrays(["1", "2", "3"], ["1", "2", "3"])
+assertEqual(eqArrays(["1", "2", "3"], ["1", "2", "3"]), true);
+
+eqArrays(["1", "2", "3"], ["1", "2", 3])
+assertEqual(eqArrays(["1", "2", "3"], ["1", "2", 3]),false);
