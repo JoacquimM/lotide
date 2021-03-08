@@ -1,4 +1,39 @@
-const head   = require('./head');
+const head   = 'head';
+const tail   = 'tail';
+const middle = 'middle';
+const assertArraysEquals = 'assertArraysEquals';
+const assertEqual ='assertEqual';
+///-----
+const eqArrays = 'eqArrays';
+const eqObjects = 'eqObjects';
+const assertObjectEqual = 'assertObjectEqual';
+const countLetters = 'countLetters';
+const countOnly = 'countOnly';
+const findKey = 'findkey';
+const findKeyByValue = 'findKeyByValue';
+const letterPositions = 'letterPositions';
+const tail = 'tail';
+
+module.exports = {
+  head,
+  tail,
+  middle,
+  assertArraysEquals,
+  assertEqual,
+  eqArrays,
+  eqObjects,
+  assertObjectEqual,
+  countLetters,
+  countOnly,
+  findKey ,
+  findKeyByValue ,
+  letterPositions,
+  tail ,
+};
+
+/*
+
+const head   = 'head';
 const tail   = require('./tail');
 const middle = require('./middle');
 const assertArraysEquals = require('./assertArraysEquals');
@@ -15,7 +50,7 @@ const letterPositions = require('./letterPositions');
 const tail = require('./tail');
 
 module.exports = {
-  head:   head,
+  head,
   tail:   tail,
   middle: middle,
   assertArraysEquals: assertArraysEquals,
@@ -30,3 +65,4 @@ module.exports = {
   letterPositions : letterPositions,
   tail :  tail ,
 };
+*/
