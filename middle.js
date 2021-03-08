@@ -1,37 +1,46 @@
 /*
 -  Below function compares two arrays and ethere will return true or false 
 */
+const eqArrays = require('./eqArrays.js');
+const assertArraysEquals = require('./assertArraysEquals.js');
 
-const eqArrays = (arr1, arr2) => {
-  let answer = '';
-  for (let i = 0; i < arr1.length; i++) {
-    if (arr1[i] === arr2[i]) {
-      answer = true;
-    } else{
-      answer = false;
-    }
-  }
-  // console.log(answer);
-  return(answer);
 
-};
+// required above 
+
+
+// const eqArrays = (arr1, arr2) => {
+//   let answer = '';
+//   for (let i = 0; i < arr1.length; i++) {
+//     if (arr1[i] === arr2[i]) {
+//       answer = true;
+//     } else{
+//       answer = false;
+//     }
+//   }
+//   // console.log(answer);
+//   return(answer);
+
+// };
 /*
 - below function compares tow arrways 
   checks that they are the same ,if so prints succes message else prints failure errorMessage
   similar to asserEqual but tweeaked to comapre arrays.
 */
-const assertArraysEquals = (arr1, arr2) => {
-  const errorMessage = `❌ ❌ ❌ Assertion Failed: ${arr1} !== ${arr2}`;
-  const successMessage = `✅ ✅ ✅ Assertion Passed: ${arr1} === ${arr2}`;
 
-  let test = eqArrays(arr1, arr2);
-  if ( test === true){
-    console.log(successMessage);
-  } else {
-    console.log(errorMessage);
-  }
+// required above 
 
-}
+// const assertArraysEquals = (arr1, arr2) => {
+//   const errorMessage = `❌ ❌ ❌ Assertion Failed: ${arr1} !== ${arr2}`;
+//   const successMessage = `✅ ✅ ✅ Assertion Passed: ${arr1} === ${arr2}`;
+
+//   let test = eqArrays(arr1, arr2);
+//   if ( test === true){
+//     console.log(successMessage);
+//   } else {
+//     console.log(errorMessage);
+//   }
+
+// }
 
 /*
 middle function should return an array with only the middle 
@@ -61,15 +70,23 @@ const middle = (arr) => {
   console.log(newArray, arr);// this is your answer 
 }
 
-middle([1, 2, 3, '4', 5, 6]);
-middle([1, 2, 3,])
-middle([1, 2, true, 4, 5])
+
+//Test Code  --- below ---
+// commented out below to  to seperate test code friom function 
+
+// middle([1, 2, 3, '4', 5, 6]);
+// middle([1, 2, 3,])
+// middle([1, 2, true, 4, 5])
 
 
 // assertEqualArray to check if passed array was not modified
-const array = [1, 2, 3, '4', 5, 6];
-middle(array);
-assertArraysEquals(array,[1, 2, 3, '4', 5, 6]);
+
+// const array = [1, 2, 3, '4', 5, 6];
+// middle(array);
+
+
+// uncomment  to use function ( Make sure to require assertArraysEquals() to middleTest.js ) 
+// assertArraysEquals(array,[1, 2, 3, '4', 5, 6]);
 
 
 /*
@@ -79,3 +96,5 @@ without(words, ["lighthouse"]); // no need to capture return value for this test
 // Make sure the original array was not altered by the without function
 assertArraysEquals(words, ["hello", "world", "lighthouse"]);
 */
+
+module.exports = middle;
