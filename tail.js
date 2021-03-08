@@ -13,7 +13,7 @@ const words = ["Yo Yo", "Lighthouse", "Labs"]
 
 const tail = (arr) => {
   let tailArray = [];
- for(let i = 1; i < arr.length; i++) {
+  for(let i = 1; i < arr.length; i++) {
    tailArray.push(arr[i])
   }
 
@@ -22,12 +22,15 @@ const tail = (arr) => {
 }
 
 // Test case 1: assertion check workaround below
-const result = tail(["Hello", "Lighthouse", "Labs"]);
-assertEqual(result.length, 2); 
-assertEqual(result[0], "Lighthouse"); 
-assertEqual(result[1], "Labs"); 
+//const result = tail(["Hello", "Lighthouse", "Labs"]);
+// assertEqual(result.length, 2); 
+// assertEqual(result[0], "Lighthouse"); 
+// assertEqual(result[1], "Labs"); 
 
 // Check original array by it length 
-tail(["Yo Yo", "Lighthouse", "Labs"]);
-tail(words);
-assertEqual(words.length, 3);
+// tail(["Yo Yo", "Lighthouse", "Labs"]);
+// tail(words);
+// assertEqual(words.length, 3);
+
+module.exports = tail;
+module.exports = assertEqual;
