@@ -1,11 +1,14 @@
-const assertEqual = function(actual, expected) {
-  const errorMessage = `❌ ❌ ❌ Assertion Failed: ${actual} !== ${expected}`;
-  const successMessage = `✅ ✅ ✅ Assertion Passed: ${actual} === ${expected}`
 
-  if (actual === expected) {console.log(successMessage)
-  }else{console.log(errorMessage)
-  }
-};
+ const assertEqual = require('./assertEqual.js');
+
+// const assertEqual = function(actual, expected) {
+//   const errorMessage = `❌ ❌ ❌ Assertion Failed: ${actual} !== ${expected}`;
+//   const successMessage = `✅ ✅ ✅ Assertion Passed: ${actual} === ${expected}`
+
+//   if (actual === expected) {console.log(successMessage)
+//   }else{console.log(errorMessage)
+//   }
+// };
 
 //-------
 // tail function below
@@ -21,8 +24,8 @@ const tail = (arr) => {
   return tailArray;
 }
 
-// Test case 1: assertion check workaround below
-//const result = tail(["Hello", "Lighthouse", "Labs"]);
+// // Test case 1: assertion check workaround below
+// const result = tail(["Hello", "Lighthouse", "Labs"]);
 // assertEqual(result.length, 2); 
 // assertEqual(result[0], "Lighthouse"); 
 // assertEqual(result[1], "Labs"); 
@@ -31,6 +34,14 @@ const tail = (arr) => {
 // tail(["Yo Yo", "Lighthouse", "Labs"]);
 // tail(words);
 // assertEqual(words.length, 3);
+
+// // Check original array by it length 
+// const assertArraysEquals = require('./assertArraysEquals.js');
+// assertArraysEquals(tail(["Yo Yo", "Lighthouse", "Labs"]), [ 'Lighthouse', 'Labs' ]);
+// assertArraysEquals(tail(words),  [ 'Lighthouse', 'Labs' ]);
+// // assertEqual(words.length, 3));
+
+
 
 module.exports = tail;
 module.exports = assertEqual;

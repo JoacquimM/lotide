@@ -67,7 +67,8 @@ const middle = (arr) => {
     return middleElems;
   }
 
-  console.log(newArray, arr);// this is your answer 
+  // console.log(newArray, arr);// this is your answer 
+  console.log(newArray);
 }
 
 

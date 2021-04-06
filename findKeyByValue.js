@@ -24,7 +24,6 @@ const findKeyByValue = (obj, value) => {
 let objCopy = obj;
 let valueCopy = value;
 let answerKey = '';
-//let noMatch = 0;
 
 for (let key in objCopy){
   //console.log(key)

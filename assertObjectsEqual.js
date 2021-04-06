@@ -87,7 +87,7 @@ const eqObjects = function(object1, object2) {
 */
 
 
-
+// ----- test cases-------
 const ab = { a: "1", b: "2" };
 const ba = { b: "2", a: "1" };
 // eqObjects(ab, ba); // => true
@@ -97,6 +97,8 @@ const ba = { b: "2", a: "1" };
 
 // assertEqual(eqObjects(ab, ba), true );
 // assertEqual(eqObjects(ab, abc), false );
+
+
 
 // FUNCTION IMPLEMENTATION
 const assertObjectsEqual = (actual, expected) => {

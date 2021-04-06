@@ -22,28 +22,6 @@ The bellow function should take in a sentence (as a string) and
 return a count of each of the letters in teh sentence.
  */
 
-
-// const countLetters = (str) => {
-//   let stringCopy = str.replace(/\W/g, '');
-//   let report = {};
-//   let stringCatcher = '';
-//   for (let letter in stringCopy) {
-//     stringCopy.match(/[a-zA-Z]/g) ? letterIncrementer() /*console.log(stringCopy[letter])*/ : console.log('no match');
-//     function letterIncrementer() {
-//       // TODO: write function to increment letters 
-//       report[`${stringCopy[letter]}`] = 1; // creating key value pair
-//       stringCatcher.match(stringCopy[letter]) /* checking if letter exists*/? report[`${stringCopy[letter]}`] +=1 : stringCatcher += stringCopy[letter]//creating the string;
-
-//       //stringCatcher += stringCopy[letter];
-
-//     }
-//   }
-
-//   console.log( stringCatcher,report/*str, stringCopy*/);
-
-
-// }
-
 const countLetters = (str) => {
   let stringCopy = str.replace(/\W/g, '');
   let report = {};
@@ -68,7 +46,7 @@ const countLetters = (str) => {
 
 
 
-
+ //  Test code below 
 //countLetters('Joacquim Mukadi')
 countLetters('lighthouse in the house')
 

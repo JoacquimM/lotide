@@ -87,6 +87,7 @@ const letterPositions = (sentence) => {
 
 // letterPositions('lighthouse in the house');
 
+// Test code below 
 
 assertArraysEquals(letterPositions('lighthouse in the house').l, [0]);
 assertArraysEquals(letterPositions('hello').e, [1]);
